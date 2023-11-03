@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import numpy as np
 from tensorflow import keras
-from sklearn.preprocessing import LabelEncoder  # Import LabelEncoder
+from sklearn.preprocessing import LabelEncoder
 
 app = Flask(__name__)
 
