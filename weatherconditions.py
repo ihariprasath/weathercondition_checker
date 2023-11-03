@@ -29,7 +29,7 @@ cols=['Condition']
 data[cols]=data[cols].apply(le.fit_transform)
 data.head()
 
-columns_to_convert = ['Temp(C)',	'Temp(F)','Condition','Wind(mph)','Wind(kph)']
+columns_to_convert = ['Temp(C)','Temp(F)','Condition','Wind(mph)','Wind(kph)']
 
 # Convert the specified columns to integers
 data[columns_to_convert] = data[columns_to_convert].astype(int)
@@ -60,7 +60,7 @@ model.add(keras.layers.Dense(200,input_dim=100,activation='relu'))
 model.add(keras.layers.Dense(200,input_dim=200,activation='relu'))
 model.add(keras.layers.Dense(1,input_dim=200))
 
-model.compile(loss='mean_squared_error', optimizer='adam',metrics="mse")
+model.compile(loss='mean_squared_error', optimizer='adam',metrics=["mse"])
 
 model.fit(X_train,y_train,epochs=100)
 
