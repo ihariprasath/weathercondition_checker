@@ -32,7 +32,7 @@
             font-weight: bold;
         }
 
-        input[type="text"] {
+        input[type="number"] {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -59,19 +59,19 @@
     <h1>Weather Condition Prediction</h1>
     <form method="POST" action="/predict">
         <label for="temp_c">Temperature (C):</label>
-        <input type="text" name="temp_c" placeholder="Enter temperature in Celsius" required><br>
+        <input type="number" name="temp_c" placeholder="Enter temperature in Celsius" required><br>
 
         <label for="temp_f">Temperature (F):</label>
-        <input type="text" name="temp_f" placeholder="Enter temperature in Fahrenheit" required><br>
+        <input type="number" name="temp_f" placeholder="Enter temperature in Fahrenheit" required><br>
 
         <label for="wind_mph">Wind (mph):</label>
-        <input type="text" name="wind_mph" placeholder="Enter wind speed in mph" required><br>
+        <input type="number" name="wind_mph" placeholder="Enter wind speed in mph" required><br>
 
-        <label for="wind_kph">Wind (kph):</label>
-        <input type="text" name="wind_kph" placeholder="Enter wind speed in kph" required><br>
+        <label for "wind_kph">Wind (kph):</label>
+        <input type="number" name="wind_kph" placeholder="Enter wind speed in kph" required><br>
 
         <label for="humidity">Humidity:</label>
-        <input type="text" name="humidity" placeholder="Enter humidity percentage" required><br>
+        <input type="number" name="humidity" placeholder="Enter humidity percentage" required><br>
 
         <input type="submit" value="Predict">
     </form>
